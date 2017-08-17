@@ -17,22 +17,40 @@
 ### Exercises
 
 1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
+<p class="highlight">Watch out!"</p>
 2. Write an HTML image tag to show an image called `profile-picture.jpg`.
+  <img src="profile-picture.jpg">
 3. Write a link tag that links to http://google.com.
+<link src="http://google.com">
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
+<html>
+<head>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+</body>
+</html>
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
+<link rel="stylesheet" href="styles.css">
 8. Write a numbered list in HTML and list three of your favorite books.
 9. Fix the indentation of the following HTML sample:
 
   ```html
-  <div>
+<div>
   <ul>
-  <li>Item 1</li>
+    <li>Item 1</li>
     <li>Item 2</li>
-  <li>Item 3</li>
-    </ul>
-    </div>
+    <li>Item 3</li>
+  </ul>
+</div>
   ```
 
 ## CSS
