@@ -91,7 +91,7 @@ color: red;
 
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
-btn {
+.btn {
 background-color: blue;
 }
   ```html
@@ -134,12 +134,27 @@ An array is a variable which can hold more than one value at a time.
 var myName="Grayson"
 
 2. Write a loop that logs the numbers 1 through 10 to the console.
+var num=1
+while(num<=10){
+  console.log(num);
+  num++
+}
 
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
 
+if(score>3 && lives>0){
+alert("You win!");
+}
 
 
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
+	function sayHello(){
+	var name="Grayson;
+	console.log("Hello, "+name+"!");
+	}
+	
+	sayHello();
+	
 5. What would the following script log to the console?
 
   ```javascript
@@ -153,7 +168,7 @@ var myName="Grayson"
 
   console.log(currentSong);
   ```
-Call me Maybe
+"Call me Maybe"
 
 6. What would the following script log to the console?
 
@@ -165,7 +180,7 @@ Call me Maybe
   var result = add(3, 7);
 
   console.log(result);
-  ```
+  ```10
 
 7. What would the following script log to the console?
 
