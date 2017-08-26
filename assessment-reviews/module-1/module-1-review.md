@@ -99,12 +99,12 @@ background-color: blue;
   ```
 
 3. Write a CSS rule to give the first paragraph in the following HTML a font size of `20px`, but not the second paragraph.
-world {
+.jumbotron p {
 font-size: 20px;
 
   ```html
   <header class="jumbotron">
-    <p class="world">Hello, World!</p>
+    <p>Hello, World!</p>
   </header>
 
   <p>Welcome to this awesome website!</p>
@@ -148,12 +148,12 @@ alert("You win!");
 
 
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
-	function sayHello(){
-	var name="Grayson;
+	function sayHello(name){
+	
 	console.log("Hello, "+name+"!");
 	}
 	
-	sayHello();
+	sayHello(Grayson);
 	
 5. What would the following script log to the console?
 
@@ -198,11 +198,35 @@ alert("You win!");
   }
 
   console.log(helloGoodbye("Sarah"));
-  ```
+  ```Hello Sarah! Goodbye Sarah!
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
+var findLongestWord = ["green", "blue", "purple"];
+var largest = 0;
+for (var i = 0; i < findLongestWord.length; i++) {
+    if (findLongestWord[i].length > largest) {
+        largest = findLongestWord[i].length;
+    }
+}
+console.log(largest);
+
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
+
+function sum([a,b,c]){
+console.log(a+b+c); 
+}
+sum([4,7,18]);
+
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+function vowel(string){
+  if(string=="a","e","i","o","u","y"){
+    console.log("true")
+  }else{
+    console.log(false)  
+  }
+}
+vowel(string);
+
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
@@ -213,10 +237,10 @@ alert("You win!");
       console.log("Woof!");
     }
   };
-  ```
+  ```pet.speak();
 
 12. Using the same script as above, write the correct line to log the dog's name to the console.
-
+console.log(pet.name)
 ## Command Line
 
 ### Questions
