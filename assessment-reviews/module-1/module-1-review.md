@@ -9,8 +9,7 @@
 ## HTML
 
 ### Questions
-
-1. What is HTML and what is it used for?
+What does HTML stand for and what is it used for?
 HyperText Markup Language is a text-based language that is translated by a web browser in order to display content.
 
 2. What is the difference between an ID and a class? A class atribute is usually used on multiple elements in your HTML. An ID tribute identifies a unique element in your HTML.
@@ -201,15 +200,17 @@ alert("You win!");
   ```Hello Sarah! Goodbye Sarah!
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-var findLongestWord = ["green", "blue", "purple"];
+function findLongestWord(array){
 var largest = 0;
-for (var i = 0; i < findLongestWord.length; i++) {
-    if (findLongestWord[i].length > largest) {
-        largest = findLongestWord[i].length;
+for (var i = 0; i < array.length; i++) {
+    if (array[i].length > largest) {
+        largest = array[i].length;
     }
 }
 console.log(largest);
+}
 
+findLongestWord(["purple","green","blue"]);
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
 
 function sum([a,b,c]){
@@ -219,13 +220,15 @@ sum([4,7,18]);
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 function vowel(string){
-  if(string=="a","e","i","o","u","y"){
-    console.log("true")
+  var array=["a","e","i","o","u","y"];
+  for(var ar = 0; ar < array.length; ar++)
+  if(string==array){
+    console.log(true)
   }else{
-    console.log(false)  
+    console.log(false);
+    }
   }
-}
-vowel(string);
+vowel("o");
 
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
