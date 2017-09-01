@@ -47,7 +47,7 @@ Semantic HTML communicates the meaning, purpose, or context of the code instead 
 </html>
 
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="main.css">
 
 8. Write a numbered list in HTML and list three of your favorite books.
   <ol>
@@ -224,16 +224,16 @@ function sum(array){
 sum([2,6,3,7,1]);
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
-function vowel(string){
-  var array=["a","e","i","o","u","y"];
-  for(var ar = 0; ar < array.length; ar++)
-  if(string==array){
-    console.log(true)
-  }else{
-    console.log(false);
+function findVowel(string){
+  var vowel=["a","e","i","o","u","y"];
+  for (i = 0; i < vowel.length;i++){
+    if(string==vowel[i]){
+      return true;
     }
   }
-vowel("o");
+  return false;
+}
+console.log(findVowel("a"));
 
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
